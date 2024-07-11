@@ -1,0 +1,67 @@
+# Intuition
+<!-- Describe your first thoughts on how to solve this problem. -->
+Using recursive function to solve this problem.
+
+# Approach
+<!-- Describe your approach to solving the problem. -->
+This solution is **Not** a Depth-First Search basis algorithm.
+It's a recursive algorithm, such that multiple parts of algorithm like node's "visited, level and parent" info. manipulating had been eliminated.
+
+# Additional Information
+1. For more detail of Depth-First Search basis solution, please check my orther sol. :
+   [https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/submissions/1255340912?source=submission-ac](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/submissions/1255340912?source=submission-ac)
+3. 
+    ```cpp
+    if(result > 0 || hasApple[node])
+        return node == 0 ? result : result + 1;
+    else
+        return 0;
+    ```
+    is equivalent to another easy read version:
+    ```cpp
+    if(result > 0)
+        return node == 0 ? result : result + 1;
+    else if(hasApple[node])
+        return node == 0 ? 0 : 1;
+    else
+        return 0;
+    ```
+
+# Complexity
+*n : number of nodes*
+- Time complexity: ***O(n)***, due to # of edges = (n-1)
+<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+
+- Space complexity: ***O(n)***
+<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+
+# Code
+```cpp
+class Solution {
+public:
+    vector<vector<int>> neighbors;
+    int minTime(int n, vector<vector<int>>& edges, vector<bool>& hasApple) {
+        neighbors.resize(n);
+
+        for(auto edge: edges){  // build the graph
+            neighbors[edge[0]].push_back(edge[1]);
+            neighbors[edge[1]].push_back(edge[0]);
+        }
+        return 2*DFS(0,0,hasApple);
+    }
+    
+    int DFS(int parent, int node, vector<bool>& hasApple){
+        int temp, result = 0;
+        for(auto child: neighbors[node]){
+            if(child == parent)
+                continue;
+            temp = DFS(node, child, hasApple);
+            result += temp;
+        }
+        if(result > 0 || hasApple[node])
+            return node == 0 ? result : result + 1;
+        else
+            return 0;
+    }
+};
+```
