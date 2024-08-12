@@ -1,9 +1,9 @@
 # Leetcode_Solution
-There is a repository which store the solution of solved problem.
+There is a repository which stores the solutions to solved problems.
 
-# For more detail
+# For more details:
 All the questions in the repository have been organized as a [Notion table](https://www.notion.so/Leetcode-5bace82e9c4c4c299ccc21fe8ffb6b7b).  
-Please check the Notion page link for more detail, such as Topics, levels of difficulty, Solution types(eg. DP, Recursive, etc.) and Updates time.
+Please check the Notion page link for more details, such as Topics, levels of difficulty, solution types(eg. DP, Recursive, etc.) and updates time.
 
 # Solved & To be update List
 - 1897 Redistribute Characters to Make All Strings Equal
