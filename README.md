@@ -8,4 +8,4 @@ All the questions in the repository have been organized as a [Notion table](http
 Please check the Notion page link for more details, such as Topics, levels of difficulty, solution types(eg. DP, Recursive, etc.) and updates time.
 
 # Solved & To be update List
-
+- 668. Kth Smallest Number in Multiplication Table
