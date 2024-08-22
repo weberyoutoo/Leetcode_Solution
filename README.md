@@ -1,3 +1,5 @@
+[![Static Badge](https://img.shields.io/badge/Table_List-blue?style=flat&logo=notion)](https://www.notion.so/Leetcode-5bace82e9c4c4c299ccc21fe8ffb6b7b)
+[![Static Badge](https://img.shields.io/badge/Difficulty_Chart-green?style=flat&logo=notion)](https://www.notion.so/Leetcode-5bace82e9c4c4c299ccc21fe8ffb6b7b)
 # Leetcode_Solution
 There is a repository which stores the solutions to solved problems.
 
