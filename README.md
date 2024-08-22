@@ -6,8 +6,4 @@ All the questions in the repository have been organized as a [Notion table](http
 Please check the Notion page link for more details, such as Topics, levels of difficulty, solution types(eg. DP, Recursive, etc.) and updates time.
 
 # Solved & To be update List
-- 1897 Redistribute Characters to Make All Strings Equal
-- 3181 Maximum Total Reward Using Operations II
-- 2437 Number of Valid Clock Times
-- 1981 Minimize the Difference Between Target and Chosen Elements
-- 942 DI String Match
+
