@@ -1,5 +1,6 @@
 [![Static Badge](https://img.shields.io/badge/Table_List-blue?style=flat&logo=notion)](https://fearless-camel-a07.notion.site/Leetcode-5bace82e9c4c4c299ccc21fe8ffb6b7b)
 [![Static Badge](https://img.shields.io/badge/Difficulty_Chart-green?style=flat&logo=notion)](https://fearless-camel-a07.notion.site/Leetcode-5bace82e9c4c4c299ccc21fe8ffb6b7b)
+![Static Badge](https://img.shields.io/github/directory-file-count/weberyoutoo/Leetcode_Solution?style=flat&logo=files&label=Total)
 # Leetcode_Solution
 There is a repository which stores the solutions to solved problems.
 
