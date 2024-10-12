@@ -10,3 +10,5 @@ Please check the Notion page link for more details, such as Topics, levels of di
 
 # Solved & To be update List
 - 
+
+### Two different way to difine the compare class of **std** : [Problem 347](https://github.com/weberyoutoo/Leetcode_Solution/blob/main/347.%20Top%20K%20Frequent%20Elements.md)
