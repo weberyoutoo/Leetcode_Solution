@@ -1,0 +1,35 @@
+name: Update File Count Badge
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  count-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Count files
+        id: file_count
+        run: |
+          count_main=$(find . -type f | wc -l)
+          count_solutions=$(find solutions -type f | wc -l)
+          total_files=$((count_main + count_solutions))
+          echo "TOTAL_FILES=$total_files" >> $GITHUB_ENV
+
+      - name: Update README Badge
+        run: |
+          sed -i 's/Total_Files-[0-9]*/Total_Files-${{ env.TOTAL_FILES }}/' README.md
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Update file count badge" || echo "No changes to commit"
+          git push
