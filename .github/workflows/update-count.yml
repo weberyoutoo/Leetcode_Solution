@@ -18,7 +18,7 @@ jobs:
         id: file_count
         run: |
           count_main=$(find . -type f | wc -l)
-          count_solutions=$(find solutions -type f | wc -l)
+          count_solutions=$(find Solutions -type f | wc -l)
           total_files=$((count_main + count_solutions))
           echo "TOTAL_FILES=$total_files" >> $GITHUB_ENV
 
